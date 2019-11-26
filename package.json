@@ -3,13 +3,13 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www",
     "test": "npm run lint",
     "prettier": "prettier --config .prettierrc.json --write app.js",
     "lint": "eslint app.js",
     "lint:fix": "eslint --fix app.js",
     "precommit": "npm run lint:fix",
-    "prepush": "npm run test"
+    "prepush": "npm run test" ,
+    "start": "node ./bin/www"
   },
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
